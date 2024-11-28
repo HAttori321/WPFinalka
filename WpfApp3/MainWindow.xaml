@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPFinalka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Image Downloader" Height="415" Width="541">
+    <Grid>
+        <TextBox Name="UrlTextBox"  VerticalAlignment="Top" Margin="10,30,10,0" Background="LightGray" Height="25">Enter URL</TextBox>
+        <TextBox Name="DestinationTextBox" VerticalAlignment="Top" Margin="10,81,10,0" Background="LightGray" Height="26">Enter Path</TextBox>
+        <Button  Width="123" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="366,120,0,0" Click="DownloadPicture">Donwload Picture</Button>
+        <Button  Width="123" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="67,120,0,0" Click="DonwloadFile">Donwload File</Button>
+        <ProgressBar x:Name="ProgressBar" IsIndeterminate="True" VerticalAlignment="Top" Height="10" Margin="1,389,0,0"></ProgressBar>
+        <ListBox Name="StatusListBox" Width="520" Height="215" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,174,0,0"/>
+    </Grid>
+</Window>
